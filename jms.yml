@@ -1,0 +1,16 @@
+# IBM WebSphere MQ
+wmq:
+    :factory: com.ibm.mq.jms.MQQueueConnectionFactory
+    :queue_manager: sampleqmgr
+    :host_name: 192.168.1.116
+    :channel: QM.ADMIN.CLIENT
+    :port: 1414
+    # Transport Type: com.ibm.mq.jms.JMSC::MQJMS_TP_CLIENT_MQ_TCPIP
+    :transport_type: 1
+    :username: admin
+    :password: passw0rd
+    :require_jars:
+        - "jms.jar"
+        - "com.ibm.mq.jar"
+        - "com.ibm.mqjms.jar"
+        - "com.ibm.mq.allclient.jar"
